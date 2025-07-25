@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Future Value Calculator</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'calculator/css/style.css' %}">
+</head>
+<body>
+  <h1>Future Value Calculator</h1>
+
+  <form id="fv-form">
+    <div class="form-row">
+      <label for="monthly">Monthly Investment:</label>
+      <input type="number" id="monthly" required />
+    </div>
+
+    <div class="form-row">
+      <label for="interest">Yearly Interest Rate:</label>
+      <input type="number" id="interest" step="0.01" required />
+    </div>
+
+    <div class="form-row">
+      <label for="years">Number of Years:</label>
+      <input type="number" id="years" required />
+    </div>
+
+    <div class="form-row">
+      <label for="future">Future Value:</label>
+      <input type="text" id="future" value="$0.00" readonly />
+    </div>
+
+    <div class="button-row">
+      <button type="button" onclick="calculate()">Calculate</button>
+      <a href="#" onclick="clearForm()">Clear</a>
+    </div>
+  </form>
+
+  <script src="{% static 'calculator/js/calculator.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #00008b;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-row label {
+  width: 180px;
+  text-align: left; /* changed from right to left */
+  margin-right: 10px;
+}
+
+.form-row input {
+  width: 200px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.button-row {
+  margin-top: 15px;
+  margin-left: 0; /* reset left margin */
+}
+
+button {
+  padding: 5px 10px;
+}
+
+a {
+  margin-left: 10px;
+  font-size: 16px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
